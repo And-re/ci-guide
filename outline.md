@@ -1,4 +1,4 @@
-#Overview
+#Overview CI Guide
 
 This guide should help Codeship users & customers that are interested in getting started with Jet, Codeship's Docker based platform. The guide consists of 5 parts. Please find the links to every part and a short description below:
 
