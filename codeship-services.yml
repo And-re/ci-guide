@@ -1,12 +1,21 @@
 demo:
   build:
-    image: andrez/ci-guide
+    image: hi
     dockerfile_path: Dockerfile
   links:
     - redis
     - postgres
   environment:
     TEST_TOKEN: Testing123
+  volumes:
+    - ./tmp:/code
+
+demo_volumes:
+  build:
+    image: myapp
+    dockerfile_path: Dockerfile.volumes
+  volumes_from:
+    - demo
 
 redis:
   image: redis:3.0.5
