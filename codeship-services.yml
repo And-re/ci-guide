@@ -1,6 +1,6 @@
 demo:
   build:
-    image: hi
+    image: andrez/ci-guide
     dockerfile_path: Dockerfile
   links:
     - redis
@@ -9,6 +9,7 @@ demo:
     TEST_TOKEN: Testing123
   volumes:
     - ./tmp:/code
+  cached: true
 
 demo_volumes:
   build:
