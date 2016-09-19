@@ -1,6 +1,6 @@
 demo:
   build:
-    image: myapp
+    image: andrez/ci-guide
     dockerfile_path: Dockerfile
   links:
     - redis
